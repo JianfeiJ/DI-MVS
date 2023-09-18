@@ -59,8 +59,18 @@ Download [Tanks & Temples test dataset](https://drive.google.com/file/d/1gAfmeoG
 
 ## Reproducing Results
 Download pretrained model on [DTU and BlendedMVS](https://drive.google.com/drive/folders/1BWPfXx4aPEjt6SsvvtZGNTriMTMHbHDp?usp=sharing), and remove them to checkppints folder.
-### DTU
+### Evaluation on DTU
  ```
-sh test.sh
+sh test_dtu.sh
  ```
+For quantitative evaluation on DTU dataset, download [SampleSet](http://roboimagedata.compute.dtu.dk/?page_id=36) and [Points](http://roboimagedata.compute.dtu.dk/?page_id=36). Unzip them and place Points folder in SampleSet/MVS Data/. The structure looks like:
+```
+- SampleSet
+  - MVS Data
+    - ObsMask
+    - Points
+```
 ### Tanks & Temples
+ ```
+sh test_tnt.sh
+ ```
