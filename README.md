@@ -78,8 +78,8 @@ sh test_tnt.sh
 |    Methods  |  Acc. (mm)     | Comp. (mm) | Overall (mm)   |
 |    :----:   |    :----:   |    :----:   |    :----:    |
 | DI-MVS-lite     | 0.305      |0.305| 0.305   |
-| DI-MVS      | 0.312      |0.278| 0.295   |
+| DI-MVS      | 0.312      |0.278| 0.295|
 ### Result on Tanks & Temples
-|    Training Dataset  |Intermediate|Advanced |
+|Intermediate|Advanced |
 |    :----:   |    :----:   |
 | 62.94      |40.94|
