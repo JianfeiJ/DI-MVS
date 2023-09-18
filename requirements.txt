@@ -1,0 +1,8 @@
+torch==1.12.1
+torchvision==0.13.1
+opencv-python
+tensorboardX
+timm
+numpy
+plyfile
+pillow
