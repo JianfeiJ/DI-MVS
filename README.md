@@ -83,3 +83,7 @@ sh test_tnt.sh
 |Intermediate|Advanced |
 |    :----:   |    :----:   |
 | 62.94      |40.94|
+
+## Acknowledgements
+This repository is partly based on [mvsnET](https://github.com/YoYo000/MVSNet), [Effi-MVS](https://github.com/bdwsq1996/Effi-MVS), [CasMVSNet](https://github.com/alibaba/cascade-stereo), [IterMVS](https://github.com/FangjinhuaWang/IterMVS).
+Thanks for their excellent works!
