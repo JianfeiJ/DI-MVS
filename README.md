@@ -63,7 +63,7 @@ Download pretrained model on [DTU and BlendedMVS](https://drive.google.com/drive
  ```
 sh test_dtu.sh
  ```
-For quantitative evaluation on DTU dataset, download [SampleSet](http://roboimagedata.compute.dtu.dk/?page_id=36) and [Points](http://roboimagedata.compute.dtu.dk/?page_id=36). Unzip them and place Points folder in SampleSet/MVS Data/. The structure looks like:
+For quantitative evaluation on DTU dataset, download [SampleSet](http://roboimagedata.compute.dtu.dk/?page_id=36) and [Points](http://roboimagedata.compute.dtu.dk/?page_id=36). Unzip them and place Points folder in SampleSet/MVS Data/.
 ```
 - SampleSet
   - MVS Data
