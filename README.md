@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ### DTU
 - Download pre-processed datasets for test: [dtu](https://drive.google.com/file/d/1jN8yEQX0a-S22XwUjISM8xSJD39pFLL_/view).
   ```
-  - dtu
+  - dtu/
   - scan1 (scene_name1)
   - scan2 (scene_name2)
     - images
@@ -37,6 +37,24 @@ pip install -r requirements.txt
   ```
 ### Tanks & Temples
 
-Download [Tanks&Temples](https://drive.google.com/file/d/1gAfmeoGNEFl9dL4QcAU4kF0BAyTd-r8Z/view) for evaluation on 
+Download [Tanks &T emples test dataset](https://drive.google.com/file/d/1gAfmeoGNEFl9dL4QcAU4kF0BAyTd-r8Z/view)
+ ```
+- tanksandtemples_1/
+  - advanced
+    - ...
+    - Temple
+      - cams
+      - images
+      - pair.txt
+      - Temple.log
+  - intermediate
+    - ...
+    - Train
+      - cams
+      - cams_train
+      - images
+      - pair.txt
+      - Train.log
+ ```
 
 ## Test
