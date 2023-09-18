@@ -37,7 +37,7 @@ pip install -r requirements.txt
   ```
 ### Tanks & Temples
 
-Download [Tanks & Temples test dataset](https://drive.google.com/file/d/1gAfmeoGNEFl9dL4QcAU4kF0BAyTd-r8Z/view)
+Download [Tanks & Temples test dataset](https://drive.google.com/file/d/1gAfmeoGNEFl9dL4QcAU4kF0BAyTd-r8Z/view).
  ```
 - tanksandtemples_1/
   - advanced
