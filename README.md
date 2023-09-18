@@ -79,7 +79,7 @@ sh test_tnt.sh
 |    :----:   |    :----:   |    :----:   |    :----:    |
 | DI-MVS-lite     | 0.305      |0.305| 0.305   |
 | DI-MVS      | 0.312      |0.278| 0.295|
-### Result on [Tanks & Temples benchmark](https://www.tanksandtemples.org/leaderboard/AdvancedF/?table_0-sort=-my_mean)
+### Result on [Tanks & Temples benchmark](https://www.tanksandtemples.org/leaderboard/AdvancedF/?table_0-sort=-my_mean).
 |Intermediate|Advanced |
 |    :----:   |    :----:   |
 | 62.94      |40.94|
