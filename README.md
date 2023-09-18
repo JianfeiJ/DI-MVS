@@ -58,4 +58,9 @@ Download [Tanks & Temples test dataset](https://drive.google.com/file/d/1gAfmeoG
  ```
 
 ## Reproducing Results
-### Download pretrained model on [DTU and BlendedMVS](https://drive.google.com/drive/folders/1BWPfXx4aPEjt6SsvvtZGNTriMTMHbHDp?usp=sharing)
+### Download pretrained model on [DTU and BlendedMVS](https://drive.google.com/drive/folders/1BWPfXx4aPEjt6SsvvtZGNTriMTMHbHDp?usp=sharing), and remove them to checkppints folder.
+### DTU
+ ```
+sh test.sh
+ ```
+### Tanks & Temples
