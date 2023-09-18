@@ -74,3 +74,14 @@ For quantitative evaluation on DTU dataset, download [SampleSet](http://roboimag
  ```
 sh test_tnt.sh
  ```
+### Result on DTU
+|    Methods  |  Acc. (mm)     | Comp. (mm) | Overall (mm)   |
+|    :----:   |    :----:   |    :----:   |    :----:    |
+| PatchmatchNet (1600×1200)      | 0.427      |0.277| 0.352   |
+| Ours (1152×864)      | 0.442      |0.262| 0.352   |
+| Ours (1600×1152)      | 0.427      |0.256| 0.342   |
+### Result on Tanks & Temples
+|    Training Dataset  |Intermediate|Advanced |
+|    :----:   |    :----:   |    :----:   |
+| DTU      | 56.70|35.59|
+| BlendedMVS      | 57.67      |35.89|
