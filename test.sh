@@ -8,8 +8,6 @@ CKPT_FILE="checkpoints/blend_ft.ckpt"
 
 OUT_DIR='outputs/dtu/'
 
-#rt_cor_entropy_conf4 conf=0.4
-
 if [ ! -d $OUT_DIR ]; then
     mkdir -p $OUT_DIR
 fi
