@@ -18,9 +18,6 @@ class MVSDataset(Dataset):
         self.img_wh = img_wh
         self.input_scans = scan
 
-        self.fix_res = False
-        self.fix_wh = False
-
         self.split = split
         self.build_metas()
         self.n_views = n_views
@@ -80,7 +77,7 @@ class MVSDataset(Dataset):
 
 
         depth_min = float(lines[11].split()[0])
-        depth_max = float(lines[11].split()[1])
+        depth_max = float(lines[11].split()[-1])
 
         return intrinsics, extrinsics, depth_min, depth_max
 
@@ -97,25 +94,6 @@ class MVSDataset(Dataset):
         var = np.var(img, axis=(0, 1), keepdims=True)
         mean = np.mean(img, axis=(0, 1), keepdims=True)
         return (img - mean) / (np.sqrt(var) + 0.00000001)
-
-    def scale_mvs_input(self, img, intrinsics, max_w, max_h, base=32):
-        h, w = img.shape[:2]
-        if h > max_h or w > max_w:
-            scale = 1.0 * max_h / h
-            if scale * w > max_w:
-                scale = 1.0 * max_w / w
-            new_w, new_h = scale * w // base * base, scale * h // base * base
-        else:
-            new_w, new_h = 1.0 * w // base * base, 1.0 * h // base * base
-
-        scale_w = 1.0 * new_w / w
-        scale_h = 1.0 * new_h / h
-        intrinsics[0, :] *= scale_w
-        intrinsics[1, :] *= scale_h
-
-        img = cv2.resize(img, (int(new_w), int(new_h)))
-
-        return img, intrinsics
 
     def __len__(self):
         return len(self.metas)
@@ -142,30 +120,8 @@ class MVSDataset(Dataset):
             img = self.read_img(img_filename, (1920, 1056))
             intrinsics, extrinsics, depth_min_, depth_max_ = self.read_cam_file(proj_mat_filename)
 
-            img, intrinsics = self.scale_mvs_input(img, intrinsics, self.image_sizes[scan][0],  self.image_sizes[scan][1])
-
-            # intrinsics[0] *= self.img_wh[0] / img_w
-            # intrinsics[1] *= self.img_wh[1] / img_h
-
-            if self.fix_res:
-                # using the same standard height or width in entire scene.
-                s_h, s_w = img.shape[:2]
-                self.fix_res = False
-                self.fix_wh = True
-
-            if i == 0:
-                if not self.fix_wh:
-                    # using the same standard height or width in each nviews.
-                    s_h, s_w = img.shape[:2]
-
-            c_h, c_w = img.shape[:2]
-            if (c_h != s_h) or (c_w != s_w):
-                scale_h = 1.0 * s_h / c_h
-                scale_w = 1.0 * s_w / c_w
-                img = cv2.resize(img, (s_w, s_h))
-                intrinsics[0, :] *= scale_w
-                intrinsics[1, :] *= scale_h
-
+            intrinsics[0] *= self.img_wh[0] / img_w
+            intrinsics[1] *= self.img_wh[1] / img_h
             imgs.append(img)
 
             proj_mat = np.zeros(shape=(2, 4, 4), dtype=np.float32)  #
@@ -200,4 +156,3 @@ class MVSDataset(Dataset):
                 "proj_matrices": proj_matrices_ms,
                 "depth_values": depth_values,
                 "filename": scan + '/{}/' + '{:0>8}'.format(view_ids[0]) + "{}"}
-
