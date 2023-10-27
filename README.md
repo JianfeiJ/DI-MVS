@@ -82,7 +82,7 @@ sh test_tnt.sh
 ### Result on [Tanks & Temples benchmark](https://www.tanksandtemples.org/leaderboard/AdvancedF/?table_0-sort=-my_mean).
 |Intermediate|Advanced |
 |    :----:   |    :----:   |
-| 62.94      |40.94|
+| 62.92      |40.94|
 
 ## Traning
 
