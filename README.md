@@ -74,17 +74,17 @@ For quantitative evaluation on DTU dataset, download [SampleSet](http://roboimag
  ```
 sh test_tnt.sh
  ```
-### Result on DTU
+### Result on DTU (single RTX 3090)
 |    Methods  |  Acc. (mm)     | Comp. (mm) | Overall (mm)   | Time (s)   |
 |    :----:   |    :----:   |    :----:   |    :----:    |   :----:    |
-| DI-MVS-lite     | 0.305      |0.305| 0.305   |  0.10  |
-| DI-MVS      | 0.312      |0.278| 0.295|0.16|
+| DI-MVS-lite     | 0.305      |0.305| 0.305   |  0.11  |
+| DI-MVS      | 0.312      |0.278| 0.295|0.30|
 ### Result on [Tanks & Temples benchmark](https://www.tanksandtemples.org/leaderboard/AdvancedF/?table_0-sort=-my_mean).
 |Intermediate|Advanced |
 |    :----:   |    :----:   |
 | 62.94      |40.92|
 
-## Traning
+## Traning (Single 3090/4090)
 
  ```
 sh train.sh
