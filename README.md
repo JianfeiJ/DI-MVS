@@ -57,7 +57,7 @@ Download [Tanks & Temples test dataset](https://drive.google.com/file/d/1gAfmeoG
       - Train.log
  ```
 
-## Reproducing Results
+## Reproducing Results (single RTX 3090)
 Download pretrained model on [DTU and BlendedMVS](https://drive.google.com/drive/folders/1BWPfXx4aPEjt6SsvvtZGNTriMTMHbHDp?usp=sharing), and remove them to the checkppints folder.
 ### Evaluation on DTU
  ```
@@ -74,7 +74,7 @@ For quantitative evaluation on DTU dataset, download [SampleSet](http://roboimag
  ```
 sh test_tnt.sh
  ```
-### Result on DTU (single RTX 3090)
+### Result on DTU
 |    Methods  |  Acc. (mm)     | Comp. (mm) | Overall (mm)   | Time (s)   |
 |    :----:   |    :----:   |    :----:   |    :----:    |   :----:    |
 | DI-MVS-lite     | 0.305      |0.305| 0.305   |  0.11  |
@@ -84,7 +84,7 @@ sh test_tnt.sh
 |    :----:   |    :----:   |
 | 62.94      |40.92|
 
-## Traning (Single 3090/4090)
+## Traning (single RTX 3090/4090)
 
  ```
 sh train.sh
