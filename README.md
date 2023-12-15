@@ -84,7 +84,7 @@ sh test_tnt.sh
 |    :----:   |    :----:   |
 | 62.94      |40.92|
 
-## Traning (single RTX 3090/4090)
+## Traning
 
  ```
 sh train.sh
