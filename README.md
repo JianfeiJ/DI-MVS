@@ -6,8 +6,8 @@ cd DI-MVS
 ```
 ## Enviorment
 ```
-conda create -n dimvs python=3.8
-conda activate dimvs
+conda create -n di-mvs python=3.8
+conda activate di-mvs
 pip install -r requirements.txt
 ```
 ## Datasets
