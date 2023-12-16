@@ -1,4 +1,4 @@
-# DI-MVS
+# DI-MVS (ICASSP 2024)
 ## Installation
 ```
 git clone https://github.com/JianfeiJ/DI-MVS.git
