@@ -89,6 +89,25 @@ sh test_tnt.sh
  ```
 sh train.sh
  ```
+## Citation
+If you find this work useful in your research, please consider citing the following preprints:
+```bibtex
+@article{jiang2025efficient,
+  title={Efficient Multi-View Stereo with Depth-Aware Iterations and Hybrid Loss Strategy},
+  author={Jiang, Jianfei and Ma, Huimin},
+  journal={Pattern Recognition},
+  pages={112500},
+  year={2025},
+}
+@inproceedings{jiang2024di,
+  title={DI-MVS: learning efficient multi-view stereo with depth-aware iterations},
+  author={Jiang, Jianfei and Cao, Mingwei and Yi, Jun and Li, Chenglong},
+  booktitle={ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={3180--3184},
+  year={2024},
+  organization={IEEE}
+}
+```
 
 ## Acknowledgements
 This repository is partly based on [Effi-MVS](https://github.com/bdwsq1996/Effi-MVS), [TransMVSNet](https://github.com/megvii-research/TransMVSNet), [IterMVS](https://github.com/FangjinhuaWang/IterMVS), [UniMVSNet](https://github.com/prstrive/UniMVSNet) and [MVSTER](https://github.com/JeffWang987/MVSTER).
