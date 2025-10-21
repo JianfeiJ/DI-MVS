@@ -92,14 +92,14 @@ sh train.sh
 ## Citation
 If you find this work useful in your research, please consider citing the following preprints:
 ```bibtex
-@article{jiang2025efficient,
+@article{di-mvs++,
   title={Efficient Multi-View Stereo with Depth-Aware Iterations and Hybrid Loss Strategy},
   author={Jiang, Jianfei and Ma, Huimin},
   journal={Pattern Recognition},
   pages={112500},
   year={2025},
 }
-@inproceedings{jiang2024di,
+@inproceedings{di-mvs,
   title={DI-MVS: learning efficient multi-view stereo with depth-aware iterations},
   author={Jiang, Jianfei and Cao, Mingwei and Yi, Jun and Li, Chenglong},
   booktitle={ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
