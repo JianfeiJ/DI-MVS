@@ -90,7 +90,7 @@ sh test_tnt.sh
 sh train.sh
  ```
 ## Citation
-If you find this work useful in your research, please consider citing the following preprints:
+If you find this work useful in your research, please consider citing the following papers:
 ```bibtex
 @article{di-mvs++,
   title={Efficient Multi-View Stereo with Depth-Aware Iterations and Hybrid Loss Strategy},
